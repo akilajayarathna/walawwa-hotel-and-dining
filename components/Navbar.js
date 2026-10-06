@@ -41,7 +41,7 @@ export default function Navbar() {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className={`fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 text-ivory transition-[background-color,padding,box-shadow] duration-300 md:px-10 ${
         scrolled
-          ? "bg-ink/95 py-3 shadow-lg backdrop-blur"
+          ? "bg-ink/55 py-3 shadow-lg backdrop-blur"
           : "bg-transparent py-5"
       }`}
     >
