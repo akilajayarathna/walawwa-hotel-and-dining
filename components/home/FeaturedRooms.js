@@ -25,14 +25,14 @@ export default function FeaturedRooms() {
         </FadeIn>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {rooms.map((room, index) => (
+          {rooms.slice(0, 3).map((room, index) => (
             <RoomCard
               key={room.id}
               name={room.name}
               description={room.description}
               price={room.price}
               image={room.image}
-              href={`/rooms#${room.slug}`}
+              href={`/rooms/${room.slug}`}
               index={index}
             />
           ))}
