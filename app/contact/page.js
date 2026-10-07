@@ -26,7 +26,7 @@ export default async function ContactPage({ searchParams }) {
         label="Book & Contact"
         title="Plan your stay"
         subtitle="Tell us your dates and we will take care of the rest."
-        image="/images/hero/hero.jpg"
+        image="/images/hero/hero.png"
       />
 
       <section className="bg-ivory px-6 py-16 md:py-24">
