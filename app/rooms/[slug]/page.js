@@ -92,7 +92,7 @@ export default async function RoomDetailPage({ params }) {
               <div className="mt-12 grid gap-4 sm:grid-cols-2">
                 {room.gallery.map((src, index) => (
                   <FadeIn key={src} delay={index * 0.15}>
-                    <div className="group relative aspect-[4/3] overflow-hidden rounded-lg">
+                    <div className="group relative aspect-4/3 overflow-hidden rounded-lg">
                       <Image
                         src={src}
                         alt={`${room.name} photo ${index + 1}`}

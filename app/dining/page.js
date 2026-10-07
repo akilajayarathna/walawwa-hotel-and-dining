@@ -54,10 +54,10 @@ export default function DiningPage() {
                   Opening hours
                 </h3>
                 <ul className="mt-4 space-y-2">
-                  {hours.map((slot) => (
-                    <li key={slot.meal} className="flex justify-between text-ink/80">
-                      <span>{slot.meal}</span>
-                      <span>{slot.time}</span>
+                  {hours.map((item) => (
+                    <li key={item.meal} className="flex justify-between text-ink/80">
+                      <span>{item.meal}</span>
+                      <span>{item.time}</span>
                     </li>
                   ))}
                 </ul>
@@ -66,9 +66,9 @@ export default function DiningPage() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="group relative aspect-[4/5] overflow-hidden rounded-t-full">
+            <div className="group relative aspect-4/5 overflow-hidden rounded-t-full">
               <Image
-                src="/images/dining/restaurant.jpg"
+                src="/images/dining/restaurant.png"
                 alt="Dining hall with carved wooden pillars and brass lamps"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"

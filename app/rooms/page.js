@@ -26,7 +26,7 @@ export default function RoomsPage() {
         label="Rooms & Suites"
         title="Your room in the hills"
         subtitle="Four ways to stay, each with traditional Kandyan craft and modern comfort."
-        image="/images/hero/hero.jpg"
+        image="/images/hero/hero.png"
       />
 
       <section className="bg-ivory px-6 py-20 md:py-28">

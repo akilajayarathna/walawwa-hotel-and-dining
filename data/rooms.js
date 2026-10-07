@@ -12,8 +12,8 @@ export const rooms = [
     guests: 2,
     bed: "1 King bed",
     features: ["Air conditioning", "Tea and coffee tray", "Rain shower", "Writing desk"],
-    image: "/images/rooms/heritage-room.jpg",
-    gallery: ["/images/rooms/bathroom.jpg", "/images/rooms/balcony.jpg"],
+    image: "/images/rooms/heritage-room.png",
+    gallery: ["/images/rooms/bathroom.png", "/images/rooms/balcony.png"],
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ export const rooms = [
     guests: 2,
     bed: "1 King bed",
     features: ["Hill view window", "Air conditioning", "Tea and coffee tray", "Bathtub"],
-    image: "/images/rooms/deluxe-hill-view.jpg",
-    gallery: ["/images/rooms/bathroom.jpg", "/images/rooms/balcony.jpg"],
+    image: "/images/rooms/deluxe-hill-view.png",
+    gallery: ["/images/rooms/bathroom.png", "/images/rooms/balcony.png"],
   },
   {
     id: 3,
@@ -44,8 +44,8 @@ export const rooms = [
     guests: 3,
     bed: "1 King bed and sofa bed",
     features: ["Private veranda", "Separate sitting area", "Freestanding bathtub", "Complimentary minibar"],
-    image: "/images/rooms/kandyan-suite.jpg",
-    gallery: ["/images/rooms/bathroom.jpg", "/images/rooms/balcony.jpg"],
+    image: "/images/rooms/kandyan-suite.png",
+    gallery: ["/images/rooms/bathroom.png", "/images/rooms/balcony.png"],
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ export const rooms = [
     guests: 4,
     bed: "2 Queen beds",
     features: ["Garden courtyard", "Air conditioning", "Extra bedding on request", "Rain shower"],
-    image: "/images/rooms/family-garden-room.jpg",
-    gallery: ["/images/rooms/bathroom.jpg", "/images/rooms/balcony.jpg"],
+    image: "/images/rooms/family-garden-room.png",
+    gallery: ["/images/rooms/bathroom.png", "/images/rooms/balcony.png"],
   },
 ];

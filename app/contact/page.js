@@ -56,11 +56,6 @@ export default async function ContactPage({ searchParams }) {
               </div>
             </FadeIn>
 
-            <FadeIn delay={0.2}>
-              <div className="flex aspect-[4/3] items-center justify-center rounded-lg border border-gold/40 bg-white text-ink/50">
-                Map placeholder
-              </div>
-            </FadeIn>
           </aside>
         </div>
       </section>

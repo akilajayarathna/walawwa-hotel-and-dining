@@ -39,18 +39,18 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className={`fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 text-ivory transition-[background-color,padding,box-shadow] duration-300 md:px-10 ${
+      className={`fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 transition-[background-color,padding,box-shadow] duration-300 md:px-10 ${
         scrolled
-          ? "bg-ink/55 py-3 shadow-lg backdrop-blur"
-          : "bg-transparent py-5"
+          ? "bg-ink/85 py-3 shadow-lg backdrop-blur text-ivory"
+          : "bg-transparent py-5 text-ink"
       }`}
     >
-      <Link href="/" className="font-heading text-2xl font-semibold text-crimson">
-        Walawwa Hotel & Dining
+      <Link href="/" className="font-heading text-xl font-semibold md:text-2xl">
+        <span className="text-gold">Walawwa</span> Hotel & Dining
       </Link>
 
       {/* Desktop links */}
-      <nav className="hidden gap-10 md:flex">
+      <nav className="hidden gap-8 lg:flex xl:gap-10">
         {navLinks.map((item) => {
           const isActive = pathname === item.href;
 
@@ -61,7 +61,7 @@ export default function Navbar() {
               className={`border-b-2 pb-1 transition-colors ${
                 isActive
                   ? "border-gold text-gold"
-                  : "border-transparent text-ink hover:text-gold"
+                  : "border-transparent hover:text-gold"
               }`}
             >
               {item.name}
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Desktop Book Now */}
       <motion.div
-        className="hidden md:block"
+        className="hidden lg:block"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -87,7 +87,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <button className="md:hidden" aria-label="Open menu">
+          <button className="lg:hidden" aria-label="Open menu">
             <Menu size={28} />
           </button>
         </SheetTrigger>

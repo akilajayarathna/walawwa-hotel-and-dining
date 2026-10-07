@@ -17,7 +17,7 @@ export default function RoomCard({ id, name, description, price, image, href, in
         className="h-full scroll-mt-28"
     >
       <Card className="group h-full gap-0 overflow-hidden border-stone/40 bg-white py-0 shadow-sm transition-shadow duration-300 hover:shadow-xl">
-        <div className="relative aspect-[4/3] overflow-hidden">
+        <div className="relative aspect-4/3 overflow-hidden">
           <Image
             src={image}
             alt={name}

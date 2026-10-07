@@ -1,0 +1,67 @@
+export const experiences = [
+  {
+    id: 1,
+    slug: "tea-plantation-visit",
+    title: "Tea Plantation Visit",
+    tagline: "Walk the green hills",
+    description:
+      "Walk between the tea rows with a local guide, learn how the leaves are picked, and finish with a tasting of single-estate Ceylon tea at the factory.",
+    duration: "Half day",
+    price: 6500,
+    highlights: ["Guided plantation walk", "Factory tour", "Tea tasting"],
+    image: "/images/experiences/tea-plantation.png",
+    featured: true,
+  },
+  {
+    id: 2,
+    slug: "cooking-class",
+    title: "Village Cooking Class",
+    tagline: "Cook in a clay pot",
+    description:
+      "Grind spices on a stone, scrape fresh coconut and cook a full rice and curry meal over a flame, then sit down and eat what you made.",
+    duration: "3 hours",
+    price: 7500,
+    highlights: ["Spice grinding", "Clay pot cooking", "Shared meal"],
+    image: "/images/experiences/cooking-class.png",
+    featured: true,
+  },
+  {
+    id: 3,
+    slug: "kandyan-dance-evening",
+    title: "Kandyan Dance Evening",
+    tagline: "An evening of tradition",
+    description:
+      "Watch a live performance of Kandyan dance and drumming in our courtyard, with a welcome drink and a traditional dinner.",
+    duration: "2 hours",
+    price: 5500,
+    highlights: ["Live performance", "Welcome drink", "Courtyard seating"],
+    image: "/images/experiences/kandyan-dance.png",
+    featured: true,
+  },
+  {
+    id: 4,
+    slug: "kandy-lake-walk",
+    title: "Kandy Lake & City Walk",
+    tagline: "Old Kandy on foot",
+    description:
+      "A relaxed sunrise walk around the lake and through the old streets of the city with a local guide, stopping for a hot cup of tea along the way.",
+    duration: "2.5 hours",
+    price: 3500,
+    highlights: ["Lake sunrise walk", "Local guide", "Tea stop"],
+    image: "/images/experiences/kandy-lake.png",
+    featured: false,
+  },
+  {
+    id: 5,
+    slug: "scenic-train-day-trip",
+    title: "Scenic Train Day Trip",
+    tagline: "The famous hill-country line",
+    description:
+      "Ride one of the most scenic railway lines in the world through tea hills and waterfalls, with transport to the station and back arranged for you.",
+    duration: "Full day",
+    price: 12000,
+    highlights: ["Reserved seats", "Hotel transfers", "Packed lunch"],
+    image: "/images/experiences/scenic-train.png",
+    featured: false,
+  },
+];

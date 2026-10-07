@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="sticky top-0 flex min-h-svh items-center justify-center overflow-hidden px-6 pb-16 pt-28">
       <Image
-        src="/images/hero/hero.jpg"
+        src="/images/hero/hero.png"
         alt="Misty hills of Kandy at sunrise"
         priority
         fill
@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-4xl text-center text-ivory">
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
-          Welcome to Walawwa Hotel & Dining
+          Welcome to <span className="text-transparent font-bold [-webkit-text-stroke:0.25px_#F5EFE0]">Walawwa</span> Hotel & Dining
         </h1>
 
         <div className="mx-auto my-6 h-px w-24 bg-gold"></div>
@@ -32,7 +32,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="w-full bg-crimson text-ivory hover:bg-crimson/90 sm:w-auto"
+            className="w-full bg-crimson text-ivory hover:bg-crimson/90 hover:font-bold sm:w-auto hover:scale-110 transition-transform"
           >
             <Link href="/contact">Book Now</Link>
           </Button>
@@ -41,7 +41,7 @@ export default function Hero() {
             asChild
             size="lg"
             variant="outline"
-            className="w-full border-gold bg-transparent text-ivory hover:bg-gold hover:text-ink sm:w-auto"
+            className="w-full border-gold bg-transparent text-ivory hover:bg-gold hover:text-ink hover:font-bold sm:w-auto hover:scale-110"
           >
             <Link href="/rooms">Explore Rooms</Link>
           </Button>

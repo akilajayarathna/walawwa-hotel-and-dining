@@ -3,16 +3,21 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import FadeIn from "@/components/FadeIn";
 import { signatureDishes } from "@/data/menu";
+import GarlandBorder from "@/components/GarlandBorder";
 
 export default function DiningHighlight() {
   return (
-    <section className="relative z-10 bg-ink px-6 py-20 text-ivory md:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+    <section className="relative z-10 bg-ink px-6 py-20 text-ivory md:py-28 md:px-32 lg:py-36">
+
+      <GarlandBorder side="left" />
+      <GarlandBorder side="right" />
+      
+      <div className="mx-auto grid max-w-4xl items-center gap-12 md:grid-cols-2">
         <FadeIn>
-          <div className="group relative aspect-[4/5] overflow-hidden rounded-lg">
+          <div className="group relative aspect-4/5 overflow-hidden rounded-lg">
             <Image
-              src="/images/dining/rice-and-curry.jpg"
-              alt="Traditional Kandyan rice and curry served on a clay plate"
+              src="/images/dining/food.jpg"
+              alt="Traditional food served on a clay plate"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -22,10 +27,10 @@ export default function DiningHighlight() {
 
         <FadeIn delay={0.2}>
           <div className="text-center md:text-left">
-            <p className="text-sm uppercase tracking-[0.3em] text-gold">
+            <p className="text-sm uppercase tracking-[0.3em] text-ivory">
               Dining
             </p>
-            <h2 className="mt-4 text-4xl md:text-5xl">
+            <h2 className="mt-4 text-4xl text-gold md:text-5xl">
               Flavours of the hill country
             </h2>
             <div className="mx-auto my-6 h-px w-24 bg-gold md:mx-0"></div>
@@ -35,10 +40,10 @@ export default function DiningHighlight() {
             </p>
 
             <ul className="mt-6 space-y-2 text-ivory/90">
-              {signatureDishes.map((dish) => (
-                <li key={dish} className="flex items-center justify-center gap-3 md:justify-start">
+              {signatureDishes.map((item) => (
+                <li key={item} className="flex items-center justify-center gap-3 md:justify-start">
                   <span className="h-1.5 w-1.5 rounded-full bg-gold"></span>
-                  {dish}
+                  {item}
                 </li>
               ))}
             </ul>
