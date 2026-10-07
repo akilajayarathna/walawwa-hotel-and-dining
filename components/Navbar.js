@@ -42,7 +42,7 @@ export default function Navbar() {
       className={`fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 transition-[background-color,padding,box-shadow] duration-300 md:px-10 ${
         scrolled
           ? "bg-ink/85 py-3 shadow-lg backdrop-blur text-ivory"
-          : "bg-transparent py-5 text-ink"
+          : "bg-ivory/40 py-5 text-ink font-bold"
       }`}
     >
       <Link href="/" className="font-heading text-xl font-semibold md:text-2xl">

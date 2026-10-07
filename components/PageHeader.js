@@ -13,7 +13,7 @@ export default function PageHeader({ label, title, subtitle, image }) {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-ink/70"></div>
+          <div className="absolute inset-0 bg-linear-to-b from-ink/20 to-ink/70"></div>
         </>
       )}
 

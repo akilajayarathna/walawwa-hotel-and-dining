@@ -13,7 +13,6 @@ const quickLinks = [
 const socials = [
   { name: "Facebook", href: "https://facebook.com" },
   { name: "Instagram", href: "https://instagram.com" },
-  { name: "TripAdvisor", href: "https://tripadvisor.com" },
 ];
 
 export default function Footer() {
@@ -29,7 +28,7 @@ export default function Footer() {
           </p>
 
           <div className="mt-6 flex flex-col gap-3">
-            <Button asChild className="bg-crimson text-ivory hover:bg-crimson/90">
+            <Button asChild className="bg-gold text-ink hover:bg-gold/90">
               <Link href="/contact">Book a Room</Link>
             </Button>
             <Button

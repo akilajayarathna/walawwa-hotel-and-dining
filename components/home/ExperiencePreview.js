@@ -45,7 +45,7 @@ export default function ExperiencePreview() {
               asChild
               size="lg"
               variant="outline"
-              className="border-crimson bg-transparent text-crimson hover:bg-crimson hover:text-ivory"
+              className="bg-crimson text-ivory hover:scale-120 hover:bg-crimson/95 hover:text-ivory transition-transform"
             >
               <Link href="/experience">All experiences</Link>
             </Button>

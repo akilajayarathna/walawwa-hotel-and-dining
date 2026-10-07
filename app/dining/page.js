@@ -28,7 +28,7 @@ export default function DiningPage() {
         label="Dining"
         title="A table in the hills"
         subtitle="Traditional Sri Lankan cooking, made fresh each day."
-        image="/images/dining/restaurant.jpg"
+        image="/images/dining/restaurant.png"
       />
 
       <section className="bg-ivory px-6 py-20 md:py-28">

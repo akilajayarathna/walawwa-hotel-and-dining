@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -5,14 +8,21 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section className="sticky top-0 flex min-h-svh items-center justify-center overflow-hidden px-6 pb-16 pt-28">
-      <Image
-        src="/images/hero/hero.png"
-        alt="Misty hills of Kandy at sunrise"
-        priority
-        fill
-        sizes="100vw"
-        className="object-cover"
-      />
+      <motion.div
+        initial={{ scale:1 }}
+        animate={{ scale:1.15 }}
+        transition={{ duration: 14, ease:"linear", repeatType:"reverse"}}
+        className="absolute inset-0"
+      >
+        <Image
+          src="/images/hero/hero.png"
+          alt="Misty hills of Kandy at sunrise"
+          priority
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+      </motion.div>
 
       <div className="absolute inset-0 bg-linear-to-b from-ink/70 via-ink/10 to-ink/70"></div>
 
@@ -32,7 +42,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="w-full bg-crimson text-ivory hover:bg-crimson/90 hover:font-bold sm:w-auto hover:scale-110 transition-transform"
+            className="w-full h-10 px-5 bg-crimson text-ivory hover:bg-crimson/90 hover:font-bold sm:w-auto hover:scale-110 transition-transform"
           >
             <Link href="/contact">Book Now</Link>
           </Button>
@@ -41,7 +51,7 @@ export default function Hero() {
             asChild
             size="lg"
             variant="outline"
-            className="w-full border-gold bg-transparent text-ivory hover:bg-gold hover:text-ink hover:font-bold sm:w-auto hover:scale-110"
+            className="w-full h-10 px-5 border-gold bg-transparent text-ivory hover:bg-gold hover:text-ink hover:font-bold sm:w-auto hover:scale-110"
           >
             <Link href="/rooms">Explore Rooms</Link>
           </Button>

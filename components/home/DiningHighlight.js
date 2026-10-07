@@ -51,7 +51,7 @@ export default function DiningHighlight() {
             <Button
               asChild
               size="lg"
-              className="mt-8 bg-gold text-ink hover:bg-gold/90"
+              className="mt-8 bg-gold text-ink hover:scale-120 hover:bg-gold/95 hover:text-ink transition-transform"
             >
               <Link href="/dining">See the menu</Link>
             </Button>
