@@ -8,7 +8,10 @@ async function testDb() {
         console.log("Connected to db! Current time: ", res.rows[0]);
     } catch (error) {
         console.error(error.stack);
+    } finally {
+        pool.end();
     }
 }
 
-testDb();
+
+module.exports = testDb;
